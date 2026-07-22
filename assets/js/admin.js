@@ -3,6 +3,7 @@ let products = [];
 let editingId = null;
 let selectedImageFile = null;
 let originalImage = '';
+let authenticated = false;
 
 async function api(path, options = {}) {
   const response = await fetch('/.netlify/functions/' + path, {
@@ -11,16 +12,24 @@ async function api(path, options = {}) {
     headers: { 'Content-Type': 'application/json', ...(options.headers || {}) }
   });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.error || 'Ошибка запроса');
+  if (!response.ok) {
+    const error = new Error(data.error || 'Ошибка запроса');
+    error.status = response.status;
+    throw error;
+  }
   return data;
 }
 
 async function checkSession() {
   try {
     await api('auth');
+    authenticated = true;
     showAdmin();
     await loadProducts();
   } catch {
+    authenticated = false;
+    $('#adminApp').hidden = true;
+    $('#productModal').hidden = true;
     $('#loginScreen').hidden = false;
   }
 }
@@ -35,6 +44,7 @@ $('#loginForm').addEventListener('submit', async event => {
   $('#loginMessage').textContent = '';
   try {
     await api('auth', { method: 'POST', body: JSON.stringify({ password: $('#password').value }) });
+    authenticated = true;
     showAdmin();
     await loadProducts();
   } catch (error) {
@@ -120,6 +130,13 @@ $('#imageFile').addEventListener('change', event => {
 $('#clearSelectedImage').addEventListener('click', clearSelectedFile);
 
 function openModal(product = null) {
+  if (!authenticated) {
+    $('#productModal').hidden = true;
+    $('#adminApp').hidden = true;
+    $('#loginScreen').hidden = false;
+    $('#loginMessage').textContent = 'Сначала войдите в панель администратора.';
+    return;
+  }
   editingId = product?.id || null;
   selectedImageFile = null;
   originalImage = product?.image || '';
@@ -147,6 +164,14 @@ function closeModal() {
 $('#addButton').onclick = () => openModal();
 $('#closeModal').onclick = closeModal;
 $('#cancelModal').onclick = closeModal;
+
+$('#productModal').addEventListener('click', event => {
+  if (event.target === $('#productModal')) closeModal();
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !$('#productModal').hidden) closeModal();
+});
 
 function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
@@ -200,7 +225,15 @@ $('#productForm').addEventListener('submit', async event => {
     renderProducts();
     closeModal();
   } catch (error) {
-    $('#formMessage').textContent = error.message;
+    if (error.status === 401) {
+      authenticated = false;
+      closeModal();
+      $('#adminApp').hidden = true;
+      $('#loginScreen').hidden = false;
+      $('#loginMessage').textContent = 'Сессия завершена. Войдите ещё раз.';
+    } else {
+      $('#formMessage').textContent = error.message;
+    }
   } finally {
     saveButton.disabled = false;
   }
