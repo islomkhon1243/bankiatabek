@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Управление — Banki Atabek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body>
+  <div class="login-screen" id="loginScreen">
+    <form class="login-card" id="loginForm">
+      <img src="/assets/images/logo.webp" alt="Banki Atabek">
+      <h1>Управление каталогом</h1>
+      <p>Введите пароль администратора</p>
+      <label>Пароль<input type="password" id="password" autocomplete="current-password" required></label>
+      <button type="submit">Войти</button>
+      <div class="message" id="loginMessage"></div>
+      <a href="/">← Вернуться в каталог</a>
+    </form>
+  </div>
+
+  <div class="app" id="adminApp" hidden>
+    <aside>
+      <a class="admin-brand" href="/"><img src="/assets/images/logo.webp" alt=""><span>Banki Atabek</span></a>
+      <nav><button class="active">Продукция</button><a href="/">Открыть сайт</a></nav>
+      <button class="logout" id="logoutButton">Выйти</button>
+    </aside>
+    <main>
+      <header><div><p>Панель администратора</p><h1>Продукция</h1></div><button class="primary" id="addButton">+ Добавить продукт</button></header>
+      <section class="notice">Фотография и данные товара автоматически сохраняются в GitHub. Netlify обновит клиентский сайт после завершения deploy.</section>
+      <div class="toolbar"><input type="search" id="adminSearch" placeholder="Поиск по каталогу"><span id="productCount"></span></div>
+      <div class="product-table" id="adminProductList"></div>
+    </main>
+  </div>
+
+  <div class="modal" id="productModal" hidden>
+    <form class="modal-card" id="productForm">
+      <div class="modal-head"><div><p>Карточка продукта</p><h2 id="modalTitle">Новый продукт</h2></div><button type="button" class="close" id="closeModal">×</button></div>
+      <input type="hidden" id="productId">
+      <div class="form-grid">
+        <label>Название<input id="name" required></label>
+        <label>Категория<input id="category" required placeholder="Например: Огурцы"></label>
+        <label class="wide">Описание<textarea id="description" rows="3"></textarea></label>
+        <div class="wide image-upload-field">
+          <span class="field-title">Фотография продукта</span>
+          <div class="image-upload-box">
+            <img id="imagePreview" src="/assets/images/products/tomatoes.webp" alt="Предпросмотр">
+            <div class="image-upload-actions">
+              <label class="file-button">Выбрать фотографию<input id="imageFile" type="file" accept="image/jpeg,image/png,image/webp"></label>
+              <small>JPG, PNG или WebP, не больше 4 МБ. При сохранении фотография загрузится автоматически.</small>
+              <button type="button" class="text-button" id="clearSelectedImage" hidden>Отменить выбор</button>
+            </div>
+          </div>
+          <input id="image" type="hidden" required>
+        </div>
+        <label class="check"><input type="checkbox" id="available" checked> В наличии</label>
+        <label class="check"><input type="checkbox" id="featured"> Показывать отметку «Хит»</label>
+      </div>
+      <div class="variants-head"><h3>Объёмы и цены</h3><button type="button" id="addVariant">+ Добавить вариант</button></div>
+      <div id="variants"></div>
+      <div class="modal-actions"><button type="button" class="secondary" id="cancelModal">Отмена</button><button type="submit" class="primary" id="saveButton">Сохранить</button></div>
+      <div class="message" id="formMessage"></div>
+    </form>
+  </div>
+  <script src="/assets/js/admin.js" defer></script>
+</body>
+</html>

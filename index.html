@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог домашней консервации Banki Atabek">
+  <title>Banki Atabek — каталог продукции</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Banki Atabek">
+      <img src="assets/images/logo.webp" alt="Логотип Banki Atabek">
+      <span><strong>Banki</strong><small>Atabek</small></span>
+    </a>
+    <nav>
+      <a href="#catalog">Каталог</a>
+      <a href="#conditions">Условия</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-logo"><img src="assets/images/logo.webp" alt="Banki Atabek"></div>
+        <p class="eyebrow">Домашняя консервация</p>
+        <h1>Вкус лета<br>в каждой банке</h1>
+        <p class="hero-text">Овощные заготовки по семейным рецептам из свежих и отборных продуктов.</p>
+        <a class="button button-gold" href="#catalog">Смотреть каталог</a>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Преимущества">
+      <article><span>01</span><div><strong>Натуральный состав</strong><p>Без лишних добавок</p></div></article>
+      <article><span>02</span><div><strong>Семейные рецепты</strong><p>Проверенный домашний вкус</p></div></article>
+      <article><span>03</span><div><strong>Свежие овощи</strong><p>Отборные ингредиенты</p></div></article>
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">Наш ассортимент</p><h2>Каталог продукции</h2></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Найти продукт..."></label>
+      </div>
+      <div class="category-list" id="categoryList"></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden>По вашему запросу ничего не найдено.</div>
+    </section>
+
+    <section class="conditions" id="conditions">
+      <div>
+        <p class="eyebrow">Важная информация</p>
+        <h2>Стоимость банки</h2>
+        <p>Цена в каталоге действует при наличии вашей банки. Если банка наша, к стоимости продукта добавляется цена тары.</p>
+      </div>
+      <div class="jar-prices">
+        <article><span>1 л</span><strong>+100 ₸</strong></article>
+        <article><span>2 л</span><strong>+150 ₸</strong></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="assets/images/logo.webp" alt=""><div><strong>Banki Atabek</strong><span>Домашняя консервация</span></div></div>
+    <p>Цены и наличие продукции уточняйте при заказе.</p>
+  </footer>
+
+  <template id="productTemplate">
+    <article class="product-card">
+      <div class="product-image-wrap">
+        <img class="product-image" alt="" loading="lazy">
+        <span class="product-badge">Хит</span>
+      </div>
+      <div class="product-content">
+        <p class="product-category"></p>
+        <h3 class="product-name"></h3>
+        <p class="product-description"></p>
+        <div class="variant-list"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="assets/js/catalog.js" defer></script>
+</body>
+</html>

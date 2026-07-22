@@ -1,0 +1,131 @@
+[
+  {
+    "id": "cherry-tomatoes",
+    "name": "Помидоры черри в томатном соке",
+    "category": "Помидоры",
+    "description": "Домашняя консервация из отборных помидоров черри.",
+    "image": "assets/images/products/cherry-tomatoes.webp",
+    "available": true,
+    "featured": true,
+    "variants": [
+      {"volume": "1 л", "price": 800},
+      {"volume": "2 л", "price": 1500}
+    ]
+  },
+  {
+    "id": "tomatoes-in-juice",
+    "name": "Помидоры в собственном соку",
+    "category": "Помидоры",
+    "description": "Цельные помидоры в натуральном соке.",
+    "image": "assets/images/products/tomatoes-in-juice.webp",
+    "available": true,
+    "featured": true,
+    "variants": [{"volume": "2 л", "price": 1100}]
+  },
+  {
+    "id": "hrustyashka",
+    "name": "Хрустяшка",
+    "category": "Салаты",
+    "description": "Хрустящий овощной салат по фирменному рецепту.",
+    "image": "assets/images/products/hrustyashka.webp",
+    "available": true,
+    "featured": false,
+    "variants": [{"volume": "2 л", "price": 1100}]
+  },
+  {
+    "id": "assorti-2l",
+    "name": "Ассорти: огурцы и помидоры",
+    "category": "Ассорти",
+    "description": "Сочетание хрустящих огурцов и спелых помидоров.",
+    "image": "assets/images/products/assorti-2l.webp",
+    "available": true,
+    "featured": true,
+    "variants": [{"volume": "2 л", "price": 1100}]
+  },
+  {
+    "id": "cucumbers-juice",
+    "name": "Огурцы в собственном соку",
+    "category": "Огурцы",
+    "description": "Маринованные огурцы в насыщенном натуральном рассоле.",
+    "image": "assets/images/products/cucumbers-juice.webp",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {"volume": "2 л, резаные", "price": 1100},
+      {"volume": "2 л, целые", "price": 1500}
+    ]
+  },
+  {
+    "id": "cherry-mix",
+    "name": "Помидоры черри",
+    "category": "Помидоры",
+    "description": "Небольшие сладкие помидоры черри в маринаде.",
+    "image": "assets/images/products/cherry-mix.webp",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {"volume": "1 л", "price": 800},
+      {"volume": "2 л", "price": 1500}
+    ]
+  },
+  {
+    "id": "cucumbers",
+    "name": "Огурцы",
+    "category": "Огурцы",
+    "description": "Классические хрустящие маринованные огурцы.",
+    "image": "assets/images/products/cucumbers.webp",
+    "available": true,
+    "featured": true,
+    "variants": [{"volume": "2 л", "price": 1100}]
+  },
+  {
+    "id": "fresh-salad",
+    "name": "Свежий салат",
+    "category": "Салаты",
+    "description": "Яркая овощная заготовка для домашнего стола.",
+    "image": "assets/images/products/fresh-salad.webp",
+    "available": true,
+    "featured": false,
+    "variants": [{"volume": "2 л", "price": 1100}]
+  },
+  {
+    "id": "spicy-cucumbers",
+    "name": "Острые огурчики",
+    "category": "Огурцы",
+    "description": "Пикантные огурчики для любителей острого.",
+    "image": "assets/images/products/spicy-cucumbers.webp",
+    "available": true,
+    "featured": false,
+    "variants": [{"volume": "1 л", "price": 800}]
+  },
+  {
+    "id": "tomatoes",
+    "name": "Помидоры",
+    "category": "Помидоры",
+    "description": "Цельные отборные помидоры в домашнем маринаде.",
+    "image": "assets/images/products/tomatoes.webp",
+    "available": true,
+    "featured": false,
+    "variants": [{"volume": "2 л", "price": 1100}]
+  },
+  {
+    "id": "assorti-3l",
+    "name": "Ассорти: огурцы и помидоры",
+    "category": "Ассорти",
+    "description": "Большая банка овощного ассорти для всей семьи.",
+    "image": "assets/images/products/assorti-3l.webp",
+    "available": true,
+    "featured": true,
+    "variants": [{"volume": "3 л", "price": 1500}]
+  },
+  {
+    "id": "tomato-juice",
+    "name": "Томатный сок",
+    "category": "Напитки",
+    "description": "Густой натуральный томатный сок.",
+    "image": "assets/images/products/tomato-juice.webp",
+    "available": true,
+    "featured": true,
+    "variants": [{"volume": "2 л", "price": 1100}]
+  }
+]
