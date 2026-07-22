@@ -8,8 +8,14 @@
     "available": true,
     "featured": true,
     "variants": [
-      {"volume": "1 л", "price": 800},
-      {"volume": "2 л", "price": 1500}
+      {
+        "volume": "1 л",
+        "price": 800
+      },
+      {
+        "volume": "2 л",
+        "price": 1500
+      }
     ]
   },
   {
@@ -20,7 +26,12 @@
     "image": "assets/images/products/tomatoes-in-juice.webp",
     "available": true,
     "featured": true,
-    "variants": [{"volume": "2 л", "price": 1100}]
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1100
+      }
+    ]
   },
   {
     "id": "hrustyashka",
@@ -30,7 +41,12 @@
     "image": "assets/images/products/hrustyashka.webp",
     "available": true,
     "featured": false,
-    "variants": [{"volume": "2 л", "price": 1100}]
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1100
+      }
+    ]
   },
   {
     "id": "assorti-2l",
@@ -40,7 +56,12 @@
     "image": "assets/images/products/assorti-2l.webp",
     "available": true,
     "featured": true,
-    "variants": [{"volume": "2 л", "price": 1100}]
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1100
+      }
+    ]
   },
   {
     "id": "cucumbers-juice",
@@ -51,8 +72,14 @@
     "available": true,
     "featured": false,
     "variants": [
-      {"volume": "2 л, резаные", "price": 1100},
-      {"volume": "2 л, целые", "price": 1500}
+      {
+        "volume": "2 л, резаные",
+        "price": 1100
+      },
+      {
+        "volume": "2 л, целые",
+        "price": 1500
+      }
     ]
   },
   {
@@ -64,8 +91,14 @@
     "available": true,
     "featured": false,
     "variants": [
-      {"volume": "1 л", "price": 800},
-      {"volume": "2 л", "price": 1500}
+      {
+        "volume": "1 л",
+        "price": 800
+      },
+      {
+        "volume": "2 л",
+        "price": 1500
+      }
     ]
   },
   {
@@ -76,7 +109,12 @@
     "image": "assets/images/products/cucumbers.webp",
     "available": true,
     "featured": true,
-    "variants": [{"volume": "2 л", "price": 1100}]
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1100
+      }
+    ]
   },
   {
     "id": "fresh-salad",
@@ -86,7 +124,12 @@
     "image": "assets/images/products/fresh-salad.webp",
     "available": true,
     "featured": false,
-    "variants": [{"volume": "2 л", "price": 1100}]
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1100
+      }
+    ]
   },
   {
     "id": "spicy-cucumbers",
@@ -96,7 +139,12 @@
     "image": "assets/images/products/spicy-cucumbers.webp",
     "available": true,
     "featured": false,
-    "variants": [{"volume": "1 л", "price": 800}]
+    "variants": [
+      {
+        "volume": "1 л",
+        "price": 800
+      }
+    ]
   },
   {
     "id": "tomatoes",
@@ -106,7 +154,12 @@
     "image": "assets/images/products/tomatoes.webp",
     "available": true,
     "featured": false,
-    "variants": [{"volume": "2 л", "price": 1100}]
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1100
+      }
+    ]
   },
   {
     "id": "assorti-3l",
@@ -116,7 +169,12 @@
     "image": "assets/images/products/assorti-3l.webp",
     "available": true,
     "featured": true,
-    "variants": [{"volume": "3 л", "price": 1500}]
+    "variants": [
+      {
+        "volume": "3 л",
+        "price": 1500
+      }
+    ]
   },
   {
     "id": "tomato-juice",
@@ -126,6 +184,26 @@
     "image": "assets/images/products/tomato-juice.webp",
     "available": true,
     "featured": true,
-    "variants": [{"volume": "2 л", "price": 1100}]
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1100
+      }
+    ]
+  },
+  {
+    "id": "kompot-vishnya",
+    "name": "Компот вишня",
+    "category": "Напитки",
+    "description": "Компот",
+    "image": "/assets/images/products/uploads/kompot-vishnya-1784720282037.jpg",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2 л",
+        "price": 1500
+      }
+    ]
   }
 ]
