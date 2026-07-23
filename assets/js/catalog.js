@@ -63,4 +63,19 @@ document.querySelector('#searchInput').addEventListener('input', event => {
   renderProducts();
 });
 
+document.addEventListener("click", function (event) {
+    const button = event.target.closest(".description-toggle");
+
+    if (!button) return;
+
+    const card = button.closest(".product-card");
+
+    if (!card) return;
+
+    const isOpen = card.classList.toggle("description-open");
+
+    button.textContent = isOpen ? "Скрыть" : "Подробнее";
+    button.setAttribute("aria-expanded", String(isOpen));
+});
+
 loadProducts();
