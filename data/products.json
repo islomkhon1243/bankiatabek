@@ -2,7 +2,7 @@
   {
     "id": "cherry-tomatoes",
     "name": "Помидоры черри в томатном соке",
-    "category": "Помидоры",
+    "category": "Соленые",
     "description": "Домашняя консервация из отборных помидоров черри.",
     "image": "assets/images/products/cherry-tomatoes.webp",
     "available": true,
@@ -21,7 +21,7 @@
   {
     "id": "tomatoes-in-juice",
     "name": "Помидоры в собственном соку",
-    "category": "Помидоры",
+    "category": "Соленые",
     "description": "Цельные помидоры в натуральном соке.",
     "image": "assets/images/products/tomatoes-in-juice.webp",
     "available": true,
@@ -51,7 +51,7 @@
   {
     "id": "assorti-2l",
     "name": "Ассорти: огурцы и помидоры",
-    "category": "Ассорти",
+    "category": "Салаты",
     "description": "Сочетание хрустящих огурцов и спелых помидоров.",
     "image": "assets/images/products/assorti-2l.webp",
     "available": true,
@@ -66,7 +66,7 @@
   {
     "id": "cucumbers-juice",
     "name": "Огурцы в собственном соку",
-    "category": "Огурцы",
+    "category": "Соленые",
     "description": "Маринованные огурцы в насыщенном натуральном рассоле.",
     "image": "assets/images/products/cucumbers-juice.webp",
     "available": true,
@@ -85,7 +85,7 @@
   {
     "id": "cherry-mix",
     "name": "Помидоры черри",
-    "category": "Помидоры",
+    "category": "Соленые",
     "description": "Небольшие сладкие помидоры черри в маринаде.",
     "image": "assets/images/products/cherry-mix.webp",
     "available": true,
@@ -104,7 +104,7 @@
   {
     "id": "cucumbers",
     "name": "Огурцы",
-    "category": "Огурцы",
+    "category": "Соленые",
     "description": "Классические хрустящие маринованные огурцы.",
     "image": "assets/images/products/cucumbers.webp",
     "available": true,
@@ -134,7 +134,7 @@
   {
     "id": "spicy-cucumbers",
     "name": "Острые огурчики",
-    "category": "Огурцы",
+    "category": "Соленые",
     "description": "Пикантные огурчики для любителей острого.",
     "image": "assets/images/products/spicy-cucumbers.webp",
     "available": true,
@@ -149,7 +149,7 @@
   {
     "id": "tomatoes",
     "name": "Помидоры",
-    "category": "Помидоры",
+    "category": "Соленые",
     "description": "Цельные отборные помидоры в домашнем маринаде.",
     "image": "assets/images/products/tomatoes.webp",
     "available": true,
@@ -164,7 +164,7 @@
   {
     "id": "assorti-3l",
     "name": "Ассорти: огурцы и помидоры",
-    "category": "Ассорти",
+    "category": "Соленые",
     "description": "Большая банка овощного ассорти для всей семьи.",
     "image": "assets/images/products/assorti-3l.webp",
     "available": true,
@@ -179,7 +179,7 @@
   {
     "id": "tomato-juice",
     "name": "Томатный сок",
-    "category": "Напитки",
+    "category": "Компоты",
     "description": "Густой натуральный томатный сок.",
     "image": "assets/images/products/tomato-juice.webp",
     "available": true,
@@ -194,7 +194,7 @@
   {
     "id": "kompot-vishnya",
     "name": "Компот вишня",
-    "category": "Напитки",
+    "category": "Компоты",
     "description": "Компот",
     "image": "/assets/images/products/uploads/kompot-vishnya-1784720282037.jpg",
     "available": true,
