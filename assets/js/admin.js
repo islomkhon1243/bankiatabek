@@ -4,6 +4,8 @@ let editingId = null;
 let selectedImageFile = null;
 let originalImage = '';
 let authenticated = false;
+const imagesInput = document.getElementById("productImages");
+const imagesPreview = document.getElementById("imagesPreview");
 
 async function api(path, options = {}) {
   const response = await fetch('/.netlify/functions/' + path, {
@@ -103,31 +105,67 @@ function setPreview(src) {
   $('#imagePreview').src = src || '/assets/images/products/tomatoes.webp';
 }
 
-function clearSelectedFile() {
-  selectedImageFile = null;
-  $('#imageFile').value = '';
-  $('#clearSelectedImage').hidden = true;
-  setPreview(originalImage);
+function renderSelectedImages() {
+    imagesPreview.innerHTML = "";
+
+    selectedImages.forEach((file, index) => {
+        const previewItem = document.createElement("div");
+        previewItem.className = "image-preview-item";
+
+        const image = document.createElement("img");
+        image.src = URL.createObjectURL(file);
+        image.alt = `Фотография ${index + 1}`;
+
+        const removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.textContent = "×";
+        removeButton.setAttribute("aria-label", "Удалить фотографию");
+
+        removeButton.addEventListener("click", () => {
+            selectedImages.splice(index, 1);
+            renderSelectedImages();
+        });
+
+        previewItem.append(image, removeButton);
+        imagesPreview.append(previewItem);
+    });
 }
 
-$('#imageFile').addEventListener('change', event => {
-  const file = event.target.files?.[0];
-  if (!file) return clearSelectedFile();
-  if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type)) {
-    $('#formMessage').textContent = 'Выберите изображение JPG, PNG или WebP.';
-    return clearSelectedFile();
-  }
-  if (file.size > 4 * 1024 * 1024) {
-    $('#formMessage').textContent = 'Размер изображения не должен превышать 4 МБ.';
-    return clearSelectedFile();
-  }
-  selectedImageFile = file;
-  $('#formMessage').textContent = '';
-  $('#clearSelectedImage').hidden = false;
-  setPreview(URL.createObjectURL(file));
-});
+imagesInput.addEventListener("change", () => {
+    const files = Array.from(imagesInput.files);
 
-$('#clearSelectedImage').addEventListener('click', clearSelectedFile);
+    selectedImages = files;
+    imagesPreview.innerHTML = "";
+
+    files.forEach((file, index) => {
+        if (!file.type.startsWith("image/")) {
+            return;
+        }
+
+        const previewItem = document.createElement("div");
+        previewItem.className = "image-preview-item";
+
+        const image = document.createElement("img");
+        image.src = URL.createObjectURL(file);
+        image.alt = `Фотография ${index + 1}`;
+
+        const removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.textContent = "×";
+        removeButton.setAttribute(
+            "aria-label",
+            `Удалить фотографию ${index + 1}`
+        );
+
+        removeButton.addEventListener("click", () => {
+            selectedImages.splice(index, 1);
+            renderSelectedImages();
+        });
+
+        previewItem.append(image, removeButton);
+        imagesPreview.append(previewItem);
+    });
+});
 
 function openModal(product = null) {
   if (!authenticated) {
