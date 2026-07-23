@@ -48,9 +48,17 @@
         <div class="wide image-upload-field">
           <span class="field-title">Фотография продукта</span>
           <div class="image-upload-box">
-            <img id="imagePreview" src="/assets/images/products/tomatoes.webp" alt="Предпросмотр">
+            <div id="imagesPreview" class="images-preview"></div>
             <div class="image-upload-actions">
-              <label class="file-button">Выбрать фотографию<input id="imageFile" type="file" accept="image/jpeg,image/png,image/webp"></label>
+              <label class="file-button">Выбрать фотографию
+                <input
+                  id="productImages"
+                  name="images"
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp"
+                  multiple
+              >
+              </label>
               <small>JPG, PNG или WebP, не больше 4 МБ. При сохранении фотография загрузится автоматически.</small>
               <button type="button" class="text-button" id="clearSelectedImage" hidden>Отменить выбор</button>
             </div>
