@@ -100,9 +100,12 @@ document.addEventListener('click', event => {
 });
 
 function openGallery(images, name) {
-  galleryImages = images;
+  const safeImages = Array.isArray(images) ? images.filter(image => typeof image === 'string' && image.trim()) : [];
+  if (!safeImages.length) return;
+
+  galleryImages = safeImages;
   galleryIndex = 0;
-  $('#galleryTitle').textContent = name;
+  $('#galleryTitle').textContent = name || 'Фотографии продукта';
   gallery.hidden = false;
   document.body.classList.add('gallery-open');
   renderGallery();
@@ -111,6 +114,15 @@ function openGallery(images, name) {
 function $(selector) { return document.querySelector(selector); }
 
 function renderGallery() {
+  if (!galleryImages.length) {
+    closeGallery();
+    return;
+  }
+
+  if (!Number.isInteger(galleryIndex) || galleryIndex < 0 || galleryIndex >= galleryImages.length) {
+    galleryIndex = 0;
+  }
+
   $('#galleryImage').src = galleryImages[galleryIndex];
   $('#galleryImage').alt = `${$('#galleryTitle').textContent}, фото ${galleryIndex + 1}`;
   $('#galleryCounter').textContent = `${galleryIndex + 1} / ${galleryImages.length}`;
@@ -137,7 +149,9 @@ $('#galleryNext').addEventListener('click', () => moveGallery(1));
 $('#galleryDots').addEventListener('click', event => {
   const dot = event.target.closest('[data-gallery-index]');
   if (!dot) return;
-  galleryIndex = Number(dot.dataset.galleryIndex);
+  const nextIndex = Number(dot.dataset.galleryIndex);
+  if (!Number.isInteger(nextIndex) || nextIndex < 0 || nextIndex >= galleryImages.length) return;
+  galleryIndex = nextIndex;
   renderGallery();
 });
 gallery.addEventListener('click', event => {
