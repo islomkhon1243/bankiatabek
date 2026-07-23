@@ -4,7 +4,11 @@
     "name": "Помидоры черри в томатном соке",
     "category": "Соленые",
     "description": "Домашняя консервация из отборных помидоров черри.",
-    "image": "assets/images/products/cherry-tomatoes.webp",
+    "images": [
+      "/assets/images/products/uploads/cherry-tomatoes-1784811096314-1-4bojm.png",
+      "/assets/images/products/uploads/cherry-tomatoes-1784811105468-2-6m31b.png"
+    ],
+    "image": "/assets/images/products/uploads/cherry-tomatoes-1784811096314-1-4bojm.png",
     "available": true,
     "featured": true,
     "variants": [
@@ -16,9 +20,6 @@
         "volume": "2 л",
         "price": 1500
       }
-    ],
-    "images": [
-      "assets/images/products/cherry-tomatoes.webp"
     ]
   },
   {
