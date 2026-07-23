@@ -45,7 +45,10 @@
     "name": "Хрустяшка",
     "category": "Салаты",
     "description": "Хрустящий овощной салат по фирменному рецепту.",
-    "image": "assets/images/products/hrustyashka.webp",
+    "images": [
+      "/assets/images/products/uploads/hrustyashka-1784811137730-1-10qe4.png"
+    ],
+    "image": "/assets/images/products/uploads/hrustyashka-1784811137730-1-10qe4.png",
     "available": true,
     "featured": false,
     "variants": [
@@ -53,9 +56,6 @@
         "volume": "2 л",
         "price": 1100
       }
-    ],
-    "images": [
-      "assets/images/products/hrustyashka.webp"
     ]
   },
   {
