@@ -232,6 +232,10 @@
     "name": "Компот вишня",
     "category": "Компоты",
     "description": "Компот",
+    "images": [
+      "/assets/images/products/uploads/kompot-vishnya-1784720282037.jpg",
+      "/assets/images/products/uploads/kompot-vishnya-1784809191284-2-27wel.jpg"
+    ],
     "image": "/assets/images/products/uploads/kompot-vishnya-1784720282037.jpg",
     "available": true,
     "featured": false,
@@ -240,9 +244,6 @@
         "volume": "2 л",
         "price": 1500
       }
-    ],
-    "images": [
-      "/assets/images/products/uploads/kompot-vishnya-1784720282037.jpg"
     ]
   }
 ]
