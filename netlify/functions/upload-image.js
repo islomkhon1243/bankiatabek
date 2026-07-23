@@ -64,7 +64,8 @@ exports.handler = async event => {
     if (!bytes.length) return json(400, { error: 'Не удалось прочитать изображение' });
     if (bytes.length > MAX_BYTES) return json(400, { error: 'Размер изображения не должен превышать 4 МБ' });
 
-    const filename = `${safeName(body.productId)}-${Date.now()}.${extension}`;
+    const suffix = `${Date.now()}-${Number(body.imageIndex || 1)}-${Math.random().toString(36).slice(2, 7)}`;
+    const filename = `${safeName(body.productId)}-${suffix}.${extension}`;
     const filePath = `assets/images/products/uploads/${filename}`;
 
     await github(`/repos/${c.owner}/${c.repo}/contents/${filePath}`, {

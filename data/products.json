@@ -16,6 +16,9 @@
         "volume": "2 л",
         "price": 1500
       }
+    ],
+    "images": [
+      "assets/images/products/cherry-tomatoes.webp"
     ]
   },
   {
@@ -31,6 +34,9 @@
         "volume": "2 л",
         "price": 1100
       }
+    ],
+    "images": [
+      "assets/images/products/tomatoes-in-juice.webp"
     ]
   },
   {
@@ -46,6 +52,9 @@
         "volume": "2 л",
         "price": 1100
       }
+    ],
+    "images": [
+      "assets/images/products/hrustyashka.webp"
     ]
   },
   {
@@ -61,6 +70,9 @@
         "volume": "2 л",
         "price": 1100
       }
+    ],
+    "images": [
+      "assets/images/products/assorti-2l.webp"
     ]
   },
   {
@@ -80,6 +92,9 @@
         "volume": "2 л, целые",
         "price": 1500
       }
+    ],
+    "images": [
+      "assets/images/products/cucumbers-juice.webp"
     ]
   },
   {
@@ -99,6 +114,9 @@
         "volume": "2 л",
         "price": 1500
       }
+    ],
+    "images": [
+      "assets/images/products/cherry-mix.webp"
     ]
   },
   {
@@ -114,6 +132,9 @@
         "volume": "2 л",
         "price": 1100
       }
+    ],
+    "images": [
+      "assets/images/products/cucumbers.webp"
     ]
   },
   {
@@ -129,6 +150,9 @@
         "volume": "2 л",
         "price": 1100
       }
+    ],
+    "images": [
+      "assets/images/products/fresh-salad.webp"
     ]
   },
   {
@@ -144,6 +168,9 @@
         "volume": "1 л",
         "price": 800
       }
+    ],
+    "images": [
+      "assets/images/products/spicy-cucumbers.webp"
     ]
   },
   {
@@ -159,6 +186,9 @@
         "volume": "2 л",
         "price": 1100
       }
+    ],
+    "images": [
+      "assets/images/products/tomatoes.webp"
     ]
   },
   {
@@ -174,6 +204,9 @@
         "volume": "3 л",
         "price": 1500
       }
+    ],
+    "images": [
+      "assets/images/products/assorti-3l.webp"
     ]
   },
   {
@@ -189,6 +222,9 @@
         "volume": "2 л",
         "price": 1100
       }
+    ],
+    "images": [
+      "assets/images/products/tomato-juice.webp"
     ]
   },
   {
@@ -204,6 +240,9 @@
         "volume": "2 л",
         "price": 1500
       }
+    ],
+    "images": [
+      "/assets/images/products/uploads/kompot-vishnya-1784720282037.jpg"
     ]
   }
 ]

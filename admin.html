@@ -46,11 +46,11 @@
         <label>Категория<input id="category" required placeholder="Например: Огурцы"></label>
         <label class="wide">Описание<textarea id="description" rows="3"></textarea></label>
         <div class="wide image-upload-field">
-          <span class="field-title">Фотография продукта</span>
+          <span class="field-title">Фотографии продукта <small id="imageCount">0 из 6</small></span>
           <div class="image-upload-box">
             <div id="imagesPreview" class="images-preview"></div>
             <div class="image-upload-actions">
-              <label class="file-button">Выбрать фотографию
+              <label class="file-button">Добавить фотографии
                 <input
                   id="productImages"
                   name="images"
@@ -59,11 +59,10 @@
                   multiple
               >
               </label>
-              <small>JPG, PNG или WebP, не больше 4 МБ. При сохранении фотография загрузится автоматически.</small>
-              <button type="button" class="text-button" id="clearSelectedImage" hidden>Отменить выбор</button>
+              <small>До 6 фотографий. JPG, PNG или WebP, каждая не больше 4 МБ. Первая фотография будет главной.</small>
+              <button type="button" class="text-button" id="clearSelectedImage" hidden>Убрать новые фотографии</button>
             </div>
           </div>
-          <input id="image" type="hidden" required>
         </div>
         <label class="check"><input type="checkbox" id="available" checked> В наличии</label>
         <label class="check"><input type="checkbox" id="featured"> Показывать отметку «Хит»</label>

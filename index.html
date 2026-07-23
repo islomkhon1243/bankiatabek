@@ -71,7 +71,10 @@
   <template id="productTemplate">
     <article class="product-card">
       <div class="product-image-wrap">
-        <img class="product-image" alt="" loading="lazy">
+        <button class="product-image-button" type="button">
+          <img class="product-image" alt="" loading="lazy">
+          <span class="photo-count" hidden></span>
+        </button>
         <span class="product-badge">Хит</span>
       </div>
       <div class="product-content">
@@ -92,6 +95,18 @@
       </div>
     </article>
   </template>
+
+  <div class="gallery-modal" id="galleryModal" hidden role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+    <div class="gallery-dialog">
+      <div class="gallery-head"><h2 id="galleryTitle"></h2><button id="galleryClose" type="button" aria-label="Закрыть">×</button></div>
+      <div class="gallery-stage">
+        <button class="gallery-arrow prev" id="galleryPrev" type="button" aria-label="Предыдущее фото">‹</button>
+        <img id="galleryImage" alt="">
+        <button class="gallery-arrow next" id="galleryNext" type="button" aria-label="Следующее фото">›</button>
+      </div>
+      <div class="gallery-footer"><span id="galleryCounter"></span><div class="gallery-dots" id="galleryDots"></div></div>
+    </div>
+  </div>
 
   <script src="assets/js/catalog.js" defer></script>
 </body>
