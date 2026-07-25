@@ -60,24 +60,20 @@
   },
   {
     "id": "cucumbers-juice",
-    "name": "Огурцы в собственном соку",
+    "name": "Огурцы в томатном  соку",
     "category": "Соленые",
     "description": "Маринованные огурцы в насыщенном натуральном рассоле.",
-    "image": "assets/images/products/cucumbers-juice.webp",
+    "images": [
+      "/assets/images/products/uploads/cucumbers-juice-1785009201381-1-cttdo.png"
+    ],
+    "image": "/assets/images/products/uploads/cucumbers-juice-1785009201381-1-cttdo.png",
     "available": true,
     "featured": false,
     "variants": [
       {
-        "volume": "2 л, резаные",
-        "price": 1100
-      },
-      {
-        "volume": "2 л, целые",
+        "volume": "2 л",
         "price": 1500
       }
-    ],
-    "images": [
-      "assets/images/products/cucumbers-juice.webp"
     ]
   },
   {
