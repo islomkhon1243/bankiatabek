@@ -311,5 +311,27 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "obzhorka",
+    "name": "Обжорка",
+    "category": "Салаты",
+    "description": "Сытный овощной салат с насыщенным вкусом. Идеальное дополнение к домашнему столу.",
+    "images": [
+      "/assets/images/products/uploads/obzhorka-1784959469888-1-5eypm.png"
+    ],
+    "image": "/assets/images/products/uploads/obzhorka-1784959469888-1-5eypm.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1100
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
