@@ -399,5 +399,23 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "kobra",
+    "name": "Кобра",
+    "category": "Салаты",
+    "description": "Острый овощной салат для любителей яркого и насыщенного вкуса.",
+    "images": [
+      "/assets/images/products/uploads/kobra-1785005272266-1-s6ik0.png"
+    ],
+    "image": "/assets/images/products/uploads/kobra-1785005272266-1-s6ik0.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "0,5л",
+        "price": 600
+      }
+    ]
   }
 ]
