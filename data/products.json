@@ -471,5 +471,27 @@
         "price": 1000
       }
     ]
+  },
+  {
+    "id": "kabachkovaya-ikra",
+    "name": "Кабачковая икра",
+    "category": "Салаты",
+    "description": "Нежная кабачковая икра по домашнему рецепту. Вкусно как самостоятельная закуска.",
+    "images": [
+      "/assets/images/products/uploads/kabachkovaya-ikra-1785006500876-1-dd3vq.png"
+    ],
+    "image": "/assets/images/products/uploads/kabachkovaya-ikra-1785006500876-1-dd3vq.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "0,5л",
+        "price": 600
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
