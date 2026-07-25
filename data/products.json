@@ -475,5 +475,28 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "pomidory-cherri-v-tomatnom-soke",
+    "name": "Помидоры черри в томатном соке",
+    "category": "Соленья",
+    "description": "Сочные помидоры черри в натуральном томатном соке. Домашний вкус и отборные ингредиенты.",
+    "images": [
+      "/assets/images/products/uploads/pomidory-cherri-v-tomatnom-soke-1785008764923-1-0lene.png",
+      "/assets/images/products/uploads/pomidory-cherri-v-tomatnom-soke-1785008767897-2-d39ef.png"
+    ],
+    "image": "/assets/images/products/uploads/pomidory-cherri-v-tomatnom-soke-1785008764923-1-0lene.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "1л",
+        "price": 800
+      },
+      {
+        "volume": "2л",
+        "price": 1500
+      }
+    ]
   }
 ]
