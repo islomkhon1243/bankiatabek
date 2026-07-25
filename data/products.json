@@ -455,24 +455,6 @@
     ]
   },
   {
-    "id": "koreyskiy-baklazhan",
-    "name": "Корейский баклажан",
-    "category": "Салаты",
-    "description": "Пикантный салат из баклажанов по-корейски с насыщенным вкусом.",
-    "images": [
-      "/assets/images/products/uploads/koreyskiy-baklazhan-1785006367835-1-c1lgu.png"
-    ],
-    "image": "/assets/images/products/uploads/koreyskiy-baklazhan-1785006367835-1-c1lgu.png",
-    "available": true,
-    "featured": false,
-    "variants": [
-      {
-        "volume": "1л",
-        "price": 1000
-      }
-    ]
-  },
-  {
     "id": "kabachkovaya-ikra",
     "name": "Кабачковая икра",
     "category": "Салаты",
@@ -491,24 +473,6 @@
       {
         "volume": "1л",
         "price": 800
-      }
-    ]
-  },
-  {
-    "id": "koreyskiy-baklazhan",
-    "name": "Корейский баклажан",
-    "category": "Салаты",
-    "description": "Пикантный салат из баклажанов по-корейски с насыщенным вкусом.",
-    "images": [
-      "/assets/images/products/uploads/koreyskiy-baklazhan-1785007031093-1-4s1wk.png"
-    ],
-    "image": "/assets/images/products/uploads/koreyskiy-baklazhan-1785007031093-1-4s1wk.png",
-    "available": true,
-    "featured": false,
-    "variants": [
-      {
-        "volume": "1л",
-        "price": 1100
       }
     ]
   }
