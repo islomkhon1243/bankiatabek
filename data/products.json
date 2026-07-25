@@ -333,5 +333,27 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "lecho-s-ogurcami",
+    "name": "Лечо с огурцами",
+    "category": "Салаты",
+    "description": "Сочетание свежих огурцов и ароматного лечо по домашнему рецепту.",
+    "images": [
+      "/assets/images/products/uploads/lecho-s-ogurcami-1784959545368-1-oidyc.png"
+    ],
+    "image": "/assets/images/products/uploads/lecho-s-ogurcami-1784959545368-1-oidyc.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1100
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
