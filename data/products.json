@@ -171,7 +171,10 @@
     "name": "Ассорти: огурцы и помидоры",
     "category": "Соленые",
     "description": "Большая банка овощного ассорти для всей семьи.",
-    "image": "assets/images/products/assorti-3l.webp",
+    "images": [
+      "/assets/images/products/uploads/assorti-3l-1785009577452-1-540yz.png"
+    ],
+    "image": "/assets/images/products/uploads/assorti-3l-1785009577452-1-540yz.png",
     "available": true,
     "featured": true,
     "variants": [
@@ -179,9 +182,6 @@
         "volume": "3 л",
         "price": 1500
       }
-    ],
-    "images": [
-      "assets/images/products/assorti-3l.webp"
     ]
   },
   {
