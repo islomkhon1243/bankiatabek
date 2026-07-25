@@ -78,24 +78,20 @@
   },
   {
     "id": "cherry-mix",
-    "name": "Помидоры черри",
+    "name": "Помидоры черри в соку",
     "category": "Соленые",
     "description": "Небольшие сладкие помидоры черри в маринаде.",
-    "image": "assets/images/products/cherry-mix.webp",
+    "images": [
+      "/assets/images/products/uploads/cherry-mix-1785009397572-1-730iy.png"
+    ],
+    "image": "/assets/images/products/uploads/cherry-mix-1785009397572-1-730iy.png",
     "available": true,
     "featured": false,
     "variants": [
       {
         "volume": "1 л",
         "price": 800
-      },
-      {
-        "volume": "2 л",
-        "price": 1500
       }
-    ],
-    "images": [
-      "assets/images/products/cherry-mix.webp"
     ]
   },
   {
