@@ -377,5 +377,27 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "sacebeli",
+    "name": "Сацебели",
+    "category": "Салаты",
+    "description": "Ароматный томатный соус с пряностями. Отлично сочетается с мясом, шашлыком и гарнирами.",
+    "images": [
+      "/assets/images/products/uploads/sacebeli-1784959744966-1-go3ug.png"
+    ],
+    "image": "/assets/images/products/uploads/sacebeli-1784959744966-1-go3ug.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1100
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
