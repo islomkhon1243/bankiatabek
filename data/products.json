@@ -472,5 +472,23 @@
         "price": 1500
       }
     ]
+  },
+  {
+    "id": "abrikos",
+    "name": "Абрикос",
+    "category": "Компоты",
+    "description": "Домашний компот из спелых абрикосов с насыщенным фруктовым вкусом.",
+    "images": [
+      "/assets/images/products/uploads/abrikos-1785012044385-1-kgw6p.png"
+    ],
+    "image": "/assets/images/products/uploads/abrikos-1785012044385-1-kgw6p.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1200
+      }
+    ]
   }
 ]
