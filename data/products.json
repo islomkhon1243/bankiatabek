@@ -417,5 +417,23 @@
         "price": 600
       }
     ]
+  },
+  {
+    "id": "adzhika",
+    "name": "Аджика",
+    "category": "Салаты",
+    "description": "Домашняя аджика из спелых овощей и ароматных специй.",
+    "images": [
+      "/assets/images/products/uploads/adzhika-1785005852390-1-0kt5c.png"
+    ],
+    "image": "/assets/images/products/uploads/adzhika-1785005852390-1-0kt5c.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
