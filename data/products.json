@@ -289,5 +289,27 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "lecho-assorti",
+    "name": "Лечо ассорти",
+    "category": "Салаты",
+    "description": "Классическое лечо из сладкого перца, томатов и овощей. Домашний вкус без лишних добавок.",
+    "images": [
+      "/assets/images/products/uploads/lecho-assorti-1784959307351-1-6votx.png"
+    ],
+    "image": "/assets/images/products/uploads/lecho-assorti-1784959307351-1-6votx.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1100
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
