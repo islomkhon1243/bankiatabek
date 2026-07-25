@@ -153,7 +153,10 @@
     "name": "Помидоры",
     "category": "Соленые",
     "description": "Цельные отборные помидоры в домашнем маринаде.",
-    "image": "assets/images/products/tomatoes.webp",
+    "images": [
+      "/assets/images/products/uploads/tomatoes-1785009790432-1-j9wum.png"
+    ],
+    "image": "/assets/images/products/uploads/tomatoes-1785009790432-1-j9wum.png",
     "available": true,
     "featured": false,
     "variants": [
@@ -161,9 +164,6 @@
         "volume": "2 л",
         "price": 1100
       }
-    ],
-    "images": [
-      "assets/images/products/tomatoes.webp"
     ]
   },
   {
