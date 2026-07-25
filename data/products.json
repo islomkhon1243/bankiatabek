@@ -355,5 +355,27 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "ikra-ovoschnaya",
+    "name": "Икра овощная",
+    "category": "Салаты",
+    "description": "Нежная овощная икра с насыщенным домашним вкусом. Отлично подходит к гарнирам и хлебу.",
+    "images": [
+      "/assets/images/products/uploads/ikra-ovoschnaya-1784959659065-1-iz9cc.png"
+    ],
+    "image": "/assets/images/products/uploads/ikra-ovoschnaya-1784959659065-1-iz9cc.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1100
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
