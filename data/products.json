@@ -267,5 +267,27 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "osenniy",
+    "name": "Осенний",
+    "category": "Салаты",
+    "description": "Сочный овощной салат из отборных сезонных овощей. Отлично подходит к любым блюдам.",
+    "images": [
+      "/assets/images/products/uploads/osenniy-1784959181627-1-5i999.png"
+    ],
+    "image": "/assets/images/products/uploads/osenniy-1784959181627-1-5i999.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1100
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
