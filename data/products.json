@@ -435,5 +435,23 @@
         "price": 800
       }
     ]
+  },
+  {
+    "id": "tomatnaya-pasta",
+    "name": "Томатная паста",
+    "category": "Салаты",
+    "description": "Натуральная томатная паста из спелых помидоров без красителей и консервантов.",
+    "images": [
+      "/assets/images/products/uploads/tomatnaya-pasta-1785006129310-1-h8bd5.png"
+    ],
+    "image": "/assets/images/products/uploads/tomatnaya-pasta-1785006129310-1-h8bd5.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "1л",
+        "price": 1200
+      }
+    ]
   }
 ]
