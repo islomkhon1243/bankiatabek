@@ -23,24 +23,6 @@
     ]
   },
   {
-    "id": "tomatoes-in-juice",
-    "name": "Помидоры в собственном соку",
-    "category": "Соленые",
-    "description": "Цельные помидоры в натуральном соке.",
-    "image": "assets/images/products/tomatoes-in-juice.webp",
-    "available": true,
-    "featured": true,
-    "variants": [
-      {
-        "volume": "2 л",
-        "price": 1100
-      }
-    ],
-    "images": [
-      "assets/images/products/tomatoes-in-juice.webp"
-    ]
-  },
-  {
     "id": "hrustyashka",
     "name": "Хрустяшка",
     "category": "Салаты",
