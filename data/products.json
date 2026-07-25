@@ -45,7 +45,10 @@
     "name": "Ассорти: огурцы и помидоры",
     "category": "Салаты",
     "description": "Сочетание хрустящих огурцов и спелых помидоров.",
-    "image": "assets/images/products/assorti-2l.webp",
+    "images": [
+      "/assets/images/products/uploads/assorti-2l-1785008854653-1-epb74.png"
+    ],
+    "image": "/assets/images/products/uploads/assorti-2l-1785008854653-1-epb74.png",
     "available": true,
     "featured": true,
     "variants": [
@@ -53,9 +56,6 @@
         "volume": "2 л",
         "price": 1100
       }
-    ],
-    "images": [
-      "assets/images/products/assorti-2l.webp"
     ]
   },
   {
