@@ -245,5 +245,27 @@
         "price": 1500
       }
     ]
+  },
+  {
+    "id": "teschin-yazyk",
+    "name": "Тещин язык",
+    "category": "Салаты",
+    "description": "Домашний салат из свежих овощей с пикантным вкусом. Натуральный состав и традиционный рецепт.",
+    "images": [
+      "/assets/images/products/uploads/teschin-yazyk-1784959036100-1-fvyd1.png"
+    ],
+    "image": "/assets/images/products/uploads/teschin-yazyk-1784959036100-1-fvyd1.png",
+    "available": true,
+    "featured": false,
+    "variants": [
+      {
+        "volume": "2л",
+        "price": 1100
+      },
+      {
+        "volume": "1л",
+        "price": 800
+      }
+    ]
   }
 ]
